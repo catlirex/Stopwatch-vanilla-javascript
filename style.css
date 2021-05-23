@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.app-container {
+  display: grid;
+  place-items: center;
+  grid-gap: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: darkslateblue;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.animation {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  position: relative;
+
+  background: rgb(4, 21, 110);
+  background: linear-gradient(
+    95deg,
+    rgba(4, 21, 110, 1) 0%,
+    rgba(227, 0, 159, 1) 100%
+  );
+
+  animation: rotate-bg 1s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes rotate-bg {
+  0% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  12.5% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      135deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  25% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      180deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  37.5% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      225deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  50% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      270deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  62.5% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      315deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  75% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      360deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  87.5% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      40deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+
+  100% {
+    background: rgb(4, 21, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 21, 110, 1) 0%,
+      rgba(227, 0, 159, 1) 100%
+    );
+  }
+}
+
+.clock {
+  font-size: 2rem;
+}
+.clock h1 {
+  margin: 100px 0;
+  color: beige;
+}
+
+.action-bar {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 50px;
+  margin-bottom: 30px;
+}
+.circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: rgb(25, 27, 91);
+  color: beige;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 80px;
+}
